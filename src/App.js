@@ -1,25 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {ModalProvider,useModal} from '@tatareact/core/Modal';
+import {ChqMenu} from '@tatareact/core/ChqMenu';
+import { ThemeProvider } from '@tatareact/core/ThemeProvider';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import Page1 from './page1';
+import Grid from "@material-ui/core/Grid/Grid";
+
+const TestModal = () => {
+  const {openError} = useModal();
+  return <button onClick={()=>openError("modal from tatareact code ")}>click me</button>
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <ThemeProvider>
+          <ModalProvider>
+              <BrowserRouter>
+                  <Grid container spacing={0}>
+                      <Grid item lg={12} md={12} sm={12} xs={12}>
+                           <ChqMenu items={[{title:'page1',url:'/page1'},{title:'page2',url:'/page2'}]}/>
+                      </Grid>
+                      <Grid item item lg={12} md={12} sm={12} xs={12} style={{padding:'5px'}}>
+                          <Switch>
+                              <Route path="/page1" component={Page1} />
+                          </Switch>
+                      </Grid>
+                  </Grid>
+              </BrowserRouter>
+          </ModalProvider>
+      </ThemeProvider>
   );
 }
 
