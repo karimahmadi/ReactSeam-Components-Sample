@@ -12,7 +12,7 @@ import { Button } from '@tatareact/core/Button';
 import DataGrid, { DataGridColumn } from '@tatareact/core/DataGrid';
 import { CodeTextLookup } from '@tatareact/core/CodeTextLookup';
 import { CodeCombo } from '@tatareact/core/CodeCombo';
-import {Grid} from "@material-ui/core/Grid";
+import {Grid} from '@tatareact/core/Grid';
 
 const Page2 = () => {
   const useData = () => [
