@@ -3,8 +3,8 @@ import {ModalProvider,useModal} from '@tatareact/core/Modal';
 import {ChqMenu} from '@tatareact/core/ChqMenu';
 import { ThemeProvider } from '@tatareact/core/ThemeProvider';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import Page1 from './page1';
-import Page2 from './page2';
+import Page1 from './pages/page1';
+import Page2 from './pages/page2';
 import Grid from "@material-ui/core/Grid/Grid";
 
 const TestModal = () => {
