@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
-import { withStyles } from '@material-ui/core';
+import {styled, withStyles} from '@material-ui/core';
 import Grid from '@material-ui/core/Grid/Grid';
 import ButtonGroup from '@material-ui/core/ButtonGroup/ButtonGroup';
+
 import { ModalProvider, useModal } from '@tatareact/core/Modal';
 import { Section } from '@tatareact/core/Section';
 import { InputLabel as Label } from '@tatareact/core/InputLabel';
@@ -10,11 +11,12 @@ import { Date } from '@tatareact/core/Date';
 import { Button } from '@tatareact/core/Button';
 import { DataTable } from '@tatareact/core/DataTable';
 
-const GridEx = withStyles(() => ({
-    item: {
-        minWidth: 'fit-content',
-    },
-}))(Grid);
+const GridEx = styled(({ left, item, ...other }) => (
+    <Grid item={item} {...other} />
+))({
+    textAlign: props => (props.left ? 'left' : 'right'),
+    padding: '1px 0',
+});
 
 const Page1 = () => {
     const useData = () => [
@@ -93,19 +95,19 @@ const Page1 = () => {
         <Fragment>
             <Section title="تقویم تعطیلات سامانه چکاوک" >
                 <GridEx container alignItems="center" spacing={0}>
-                    <GridEx item lg={1} md={1} sm={1} xs={1}>
+                    <GridEx item lg={1} md={1} sm={1} xs={1} left>
                         <Label>از تاریخ :</Label>
                     </GridEx>
                     <GridEx item lg={2} md={2} sm={2} xs={2}>
                         <Date />
                     </GridEx>
-                    <GridEx item lg={1} md={1} sm={1} xs={1}>
+                    <GridEx item lg={1} md={1} sm={1} xs={1} left>
                         <Label>تا تاریخ :</Label>
                     </GridEx>
                     <GridEx item lg={2} md={2} sm={2} xs={2}>
                         <Date />
                     </GridEx>
-                    <GridEx item lg={1} md={1} sm={1} xs={1}>
+                    <GridEx item lg={1} md={1} sm={1} xs={1} left>
                         <Label>نوع تعطیلی :</Label>
                     </GridEx>
                     <GridEx item lg={3} md={3} sm={3} xs={3}>
