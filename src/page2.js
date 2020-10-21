@@ -1,8 +1,5 @@
 import React, { Fragment } from 'react';
-import { render } from 'react-dom';
-import Grid from '@material-ui/core/Grid/Grid';
 import ButtonGroup from '@material-ui/core/ButtonGroup/ButtonGroup';
-import { withStyles, styled } from '@material-ui/core';
 import 'rc-easyui/dist/themes/default/easyui.css';
 import 'rc-easyui/dist/themes/react.css';
 import { ModalProvider } from '@tatareact/core/Modal';
@@ -15,13 +12,7 @@ import { Button } from '@tatareact/core/Button';
 import DataGrid, { DataGridColumn } from '@tatareact/core/DataGrid';
 import { CodeTextLookup } from '@tatareact/core/CodeTextLookup';
 import { CodeCombo } from '@tatareact/core/CodeCombo';
-
-const GridEx = styled(({ left, item, ...other }) => (
-  <Grid item={item} {...other} />
-))({
-  textAlign: props => (props.left ? 'left' : 'right'),
-  padding: '1px 0',
-});
+import {Grid} from "@material-ui/core/Grid";
 
 const Page2 = () => {
   const useData = () => [
@@ -62,46 +53,46 @@ const Page2 = () => {
   return (
     <Fragment>
       <Section title="حساب های برداشت کارمزد">
-        <GridEx container>
-          <GridEx item lg={2} md={2} sm={2} xs={2} left>
+        <Grid container>
+          <Grid item lg={2} md={2} sm={2} xs={2} left>
             <Label>شماره حساب:</Label>
-          </GridEx>
-          <GridEx item lg={3} md={3} sm={3} xs={3}>
+          </Grid>
+          <Grid item lg={3} md={3} sm={3} xs={3}>
             <CodeTextLookup ratio="1:1" hidebutton />
-          </GridEx>
-          <GridEx item lg={2} md={2} sm={2} xs={2} left>
+          </Grid>
+          <Grid item lg={2} md={2} sm={2} xs={2} left>
             <Label>شماره حساب برداشت کارمزد:</Label>
-          </GridEx>
-          <GridEx item lg={3} md={3} sm={3} xs={3}>
+          </Grid>
+          <Grid item lg={3} md={3} sm={3} xs={3}>
             <CodeTextLookup ratio="1:1" hidebutton />
-          </GridEx>
-          <GridEx item lg={2} md={2} sm={2} xs={2}></GridEx>
+          </Grid>
+          <Grid item lg={2} md={2} sm={2} xs={2}></Grid>
 
-          <GridEx item lg={2} md={2} sm={2} xs={2} left>
+          <Grid item lg={2} md={2} sm={2} xs={2} left>
             <Label>تاریخ شروع اعتبار از:</Label>
-          </GridEx>
-          <GridEx item lg={3} md={3} sm={3} xs={3}>
+          </Grid>
+          <Grid item lg={3} md={3} sm={3} xs={3}>
             <Date />
             <Label>تا:</Label>
             <Date />
-          </GridEx>
-          <GridEx item lg={2} md={2} sm={2} xs={2} left>
+          </Grid>
+          <Grid item lg={2} md={2} sm={2} xs={2} left>
             <Label>تاریخ خاتمه اعتبار از:</Label>
-          </GridEx>
-          <GridEx item lg={3} md={3} sm={3} xs={3}>
+          </Grid>
+          <Grid item lg={3} md={3} sm={3} xs={3}>
             <Date />
             <Label>تا:</Label>
             <Date />
-          </GridEx>
-          <GridEx item lg={2} md={2} sm={2} xs={2} left></GridEx>
+          </Grid>
+          <Grid item lg={2} md={2} sm={2} xs={2} left></Grid>
 
-          <GridEx item lg={2} md={2} sm={2} xs={2} left>
+          <Grid item lg={2} md={2} sm={2} xs={2} left>
             <Label>وضعیت:</Label>
-          </GridEx>
-          <GridEx item lg={2} md={2} sm={2} xs={2}>
+          </Grid>
+          <Grid item lg={2} md={2} sm={2} xs={2}>
             <CodeCombo items={[]} />
-          </GridEx>
-        </GridEx>
+          </Grid>
+        </Grid>
       </Section>
       <Section grid>
         <Grid container spacing={1}>

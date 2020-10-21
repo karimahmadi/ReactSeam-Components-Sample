@@ -4,8 +4,8 @@
     <list default="true" id="fbb42aa6-fa64-4d30-8ee3-d72f688a0381" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page2.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +31,7 @@
           <entry key="LICENSE" value="2" />
           <entry key="css" value="5" />
           <entry key="html" value="1" />
-          <entry key="js" value="46" />
+          <entry key="js" value="48" />
           <entry key="json" value="24" />
           <entry key="md" value="5" />
           <entry key="reactseamrc" value="1" />
@@ -43,7 +43,7 @@
           <entry key="CSS" value="5" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="24" />
-          <entry key="JavaScript" value="46" />
+          <entry key="JavaScript" value="48" />
           <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="TypeScript" value="1" />
@@ -53,7 +53,7 @@
         <counts>
           <entry key="css" value="3" />
           <entry key="dummy" value="4" />
-          <entry key="js" value="896" />
+          <entry key="js" value="961" />
           <entry key="json" value="14" />
         </counts>
       </usages-collector>
@@ -61,7 +61,7 @@
         <counts>
           <entry key="CSS" value="3" />
           <entry key="JSON" value="14" />
-          <entry key="JavaScript" value="896" />
+          <entry key="JavaScript" value="961" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
@@ -75,26 +75,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/page1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="109" column="65" selection-start-line="109" selection-start-column="65" selection-end-line="109" selection-end-column="65" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-30">
+              <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/page2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="18" selection-start-line="18" selection-end-line="23" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -128,8 +122,8 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/page2.js" />
         <option value="$PROJECT_DIR$/src/page1.js" />
+        <option value="$PROJECT_DIR$/src/page2.js" />
       </list>
     </option>
   </component>
@@ -228,12 +222,12 @@
       <workItem from="1602666250533" duration="5177000" />
       <workItem from="1603110804186" duration="4115000" />
       <workItem from="1603192004632" duration="2847000" />
-      <workItem from="1603267842231" duration="4469000" />
+      <workItem from="1603267842231" duration="5316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34476000" />
+    <option name="totallyTimeSpent" value="35323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="25" width="973" height="743" extended-state="6" />
@@ -241,7 +235,7 @@
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.17259978" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.29126215" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info id="npm" order="4" side_tool="true" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -255,7 +249,7 @@
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.26870748" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2993197" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Palette" order="0" />
@@ -424,23 +418,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page2.js">
+    <entry file="file://$PROJECT_DIR$/src/page1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" selection-start-line="18" selection-end-line="23" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-30">
+          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page1.js">
+    <entry file="file://$PROJECT_DIR$/src/page2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="109" column="65" selection-start-line="109" selection-start-column="65" selection-end-line="109" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
         </state>
       </provider>
     </entry>
