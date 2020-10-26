@@ -1,6 +1,6 @@
 import React, {useReducer} from 'react';
 import SampleReducer from './SampleReducers';
-import sampleContext from './SampleContext';
+import {DataGridContext} from './SampleContext';
 export const initalState = {
     data: [],
     currentPage: 1,
@@ -14,9 +14,9 @@ const SampleProvider= ({children}) => {
     const [state, dispatch] = useReducer(SampleReducer, initalState)
     console.log("state", state)
     return (
-        <sampleContext.Provider value={state, dispatch}>
+        <DataGridContext.Provider value={[state, dispatch]}>
             {children}
-        </sampleContext.Provider>
+        </DataGridContext.Provider>
     )
 }
 export default SampleProvider;

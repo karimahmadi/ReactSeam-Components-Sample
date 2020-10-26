@@ -3,15 +3,9 @@ import {ModalProvider,useModal} from '@tatareact/core/Modal';
 import {ChqMenu} from '@tatareact/core/ChqMenu';
 import { ThemeProvider } from '@tatareact/core/ThemeProvider';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-<<<<<<< HEAD
-import Page1 from './page1';
-import Page2 from './page2';
-import Page3 from './page3';
-import RsuiteDataGrid from './RsuiteDataGrid';
-=======
 import Page1 from './pages/page1';
 import Page2 from './pages/page2';
->>>>>>> d1bacf85e78da13653d26d123ec7096286e6e259
+import Page3 from './pages/page3';
 import Grid from "@material-ui/core/Grid/Grid";
 
 const TestModal = () => {

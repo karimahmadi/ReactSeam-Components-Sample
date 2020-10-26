@@ -1,7 +1,7 @@
 import React from 'react';
 import SampleProvider from './SampleProvider';
 import RsuiteDataGrid from './RsuiteDataGrid';
-const Page3 = () => {
+const Index = () => {
 
     return(
     <SampleProvider>
@@ -9,4 +9,4 @@ const Page3 = () => {
     </SampleProvider>
     )
 }
-export default Page3;
+export default Index;

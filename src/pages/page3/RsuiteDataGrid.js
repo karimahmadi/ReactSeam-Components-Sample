@@ -1,11 +1,12 @@
 import React, {useEffect, useContext} from 'react';
-import SampleContext from './SampleContext';
-import RDataGrid, {DataGridColumn, DataGridColumnGroup} from '@tatareact/core/RDataGrid';
+import { DataGridContext } from './SampleContext';
+import RDataGrid, {RDataGridColumn, RDataGridColumnGroup} from '@tatareact/core/RDataGrid';
 import {SampleData} from './sampleData';
 import {fetchData, setPageNumber, setSelectedRow, setPageSize, setData, sortColumn} from './SampleActions';
+
 const RsuiteDataGrid = () => {
-    console.log(SampleContext);
-    const [state, dispatch] = useContext(SampleContext);
+    console.log(DataGridContext);
+    const [state, dispatch] = useContext(DataGridContext);
     useEffect(() => {
         setTimeout(()=>dispatch(fetchData()), 1000);
         console.log(SampleData());
@@ -52,21 +53,21 @@ const RsuiteDataGrid = () => {
         headerHeight={80}
         height={420}
     >
-        <DataGridColumnGroup
+        <RDataGridColumnGroup
         header="id"
         colSpan={2}
         align="center"
         verticalAlign="middle"
         >
-        <DataGridColumn headerName="id" field="id" resizable sortable />
-        <DataGridColumn
+        <RDataGridColumn headerName="id" field="id" resizable sortable />
+        <RDataGridColumn
             headerName="userId"
             field="userId"
             resizable
             sortable
         />
-        </DataGridColumnGroup>
-        <DataGridColumn
+        </RDataGridColumnGroup>
+        <RDataGridColumn
         headerName="title"
         field="title"
         resizable
