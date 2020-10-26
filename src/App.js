@@ -5,6 +5,8 @@ import { ThemeProvider } from '@tatareact/core/ThemeProvider';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Page1 from './page1';
 import Page2 from './page2';
+import Page3 from './page3';
+import RsuiteDataGrid from './RsuiteDataGrid';
 import Grid from "@material-ui/core/Grid/Grid";
 
 const TestModal = () => {
@@ -25,6 +27,7 @@ function App() {
                           <Switch>
                               <Route path="/page1" component={Page1} />
                               <Route path="/page2" component={Page2} />
+                              <Route path="/page3" component={Page3} />
                           </Switch>
                       </Grid>
                   </Grid>
