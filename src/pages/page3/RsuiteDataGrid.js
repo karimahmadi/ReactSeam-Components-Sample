@@ -11,7 +11,7 @@ const RsuiteDataGrid = () => {
         setTimeout(()=>dispatch(fetchData()), 1000);
         console.log(SampleData());
         dispatch(setData(SampleData()));
-    }, []);
+    }, [dispatch]);
     const handlePageChange = pageNumber => {
         dispatch(setPageNumber(pageNumber))
         setTimeout(()=>dispatch(fetchData()), 1000);

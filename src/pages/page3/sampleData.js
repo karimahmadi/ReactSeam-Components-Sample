@@ -1,8 +1,6 @@
 function SampleData( sortColumnName , sortType, limit = 0, offset = 10 ) {
-    const data = [{ "id": 1, "title": "a" }];
     let result = [];
     let resultList = [];
-    const total = data.length;
     if (sortColumnName && sortType) {
         result.sort((a, b) => {
             let x = a[sortColumnName];
