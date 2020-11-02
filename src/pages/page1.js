@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import ButtonGroup from '@material-ui/core/ButtonGroup/ButtonGroup';
-import { ModalProvider, useModal } from '@tatareact/core/Modal';
 import { Section } from '@tatareact/core/Section';
 import { InputLabel as Label } from '@tatareact/core/InputLabel';
 import { Input } from '@tatareact/core/Input';
