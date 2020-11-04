@@ -1,6 +1,6 @@
 import React, {useEffect, useContext} from 'react';
 import { DataGridContext } from './SampleContext';
-import RDataGrid, {RDataGridColumn, RDataGridColumnGroup} from '@tatareact/core/RDataGrid';
+import {RDataGrid, RDataGridColumn, RDataGridColumnGroup} from '@tatareact/core/RDataGrid';
 import {SampleData} from './sampleData';
 import {fetchData, setPageNumber, setSelectedRow, setPageSize, setData, sortColumn} from './SampleActions';
 
@@ -78,5 +78,5 @@ const RsuiteDataGrid = () => {
     </RDataGrid>
     </div>
     )
-}
+};
 export default RsuiteDataGrid;
