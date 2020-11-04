@@ -1,17 +1,27 @@
 import React, {useEffect, useContext} from 'react';
+import { DataGridContext } from './SampleContext';
 import { DataGridContext } from '../../contexts/DataGridContext';
 import RDataGrid, {RDataGridColumn, RDataGridColumnGroup} from '@tatareact/core/RDataGrid';
+import {SampleData} from './sampleData';
+import {fetchData, setPageNumber, setSelectedRow, setPageSize, setData, sortColumn} from './SampleActions';
 import {DataGridData} from '../../data/DataGridData';
 import {fetchData, setPageNumber, setSelectedRow, setPageSize, setData, sortColumn, setTotal} from '../../actions/DataGridActions';
 
 const RsuiteDataGrid = () => {
+    console.log(DataGridContext);
     const [state, dispatch] = useContext(DataGridContext);
     useEffect(() => {
+        setTimeout(()=>dispatch(fetchData()), 1000);
+        console.log(SampleData());
+        dispatch(setData(SampleData()));
         dispatch(fetchData());
         loadData(undefined, undefined, state.currentPage, state.pageSize );
     }, []);
     const handlePageChange = pageNumber => {
         dispatch(setPageNumber(pageNumber))
+        setTimeout(()=>dispatch(fetchData()), 1000);
+        const data = SampleData(undefined, undefined ,pageNumber);
+        dispatch(setData(data))
         dispatch(fetchData());
         loadData(undefined, undefined ,pageNumber - 1, state.pageSize);
     }
@@ -20,12 +30,19 @@ const RsuiteDataGrid = () => {
     }
     const handleChangePageSize = (newPageSize, newPageNumber) => {
         dispatch(setPageSize(newPageSize));
+        dispatch(setPageNumber(newPageNumber))
+        setTimeout(()=>dispatch(fetchData()), 1000);
+        const data = SampleData(undefined, undefined ,newPageNumber, newPageSize);
+        dispatch(setData(data))
         dispatch(setPageNumber(0))
         dispatch(fetchData())
         loadData(undefined, undefined ,0 , newPageSize);
     };
     const handleSortColumn = (sortColumnName, sortType) => {
         dispatch(sortColumn(sortColumnName, sortType));
+        setTimeout(()=>dispatch(fetchData()), 1000);
+        const data = SampleData(sortColumnName, sortType);
+        dispatch(setData(data))
         dispatch(fetchData());
         loadData(sortColumnName, sortType);
     };
@@ -43,6 +60,7 @@ const RsuiteDataGrid = () => {
         selectionMode="multiple"
         data={state.data}
         pageRangeDisplayed={3}
+        total={5}
         total={state.total}
         onChangePage={handlePageChange}
         onChangePageSize={handleChangePageSize}
