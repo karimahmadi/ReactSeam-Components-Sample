@@ -1,12 +1,12 @@
 import React from 'react';
-import SampleProvider from './SampleProvider';
+import DataGridProvider from '../../reducers/DataGridProvider';
 import RsuiteDataGrid from './RsuiteDataGrid';
 const Index = () => {
 
     return(
-    <SampleProvider>
+    <DataGridProvider>
         <RsuiteDataGrid />
-    </SampleProvider>
+    </DataGridProvider>
     )
 }
 export default Index;

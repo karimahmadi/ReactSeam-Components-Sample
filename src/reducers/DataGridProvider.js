@@ -1,22 +1,21 @@
 import React, {useReducer} from 'react';
-import SampleReducer from './SampleReducers';
-import {DataGridContext} from './SampleContext';
+import DataGridReducers from './DataGridReducers';
+import {DataGridContext} from '../contexts/DataGridContext';
 export const initalState = {
     data: [],
-    currentPage: 1,
+    currentPage: 0,
     pageSize: 10,
-    loading: true,
+    loading: false,
     userId: '',
     selectedRows: [],
     selectedRow: '',
 };
-const SampleProvider= ({children}) => {
-    const [state, dispatch] = useReducer(SampleReducer, initalState)
-    console.log("state", state)
+const DataGridProvider= ({children}) => {
+    const [state, dispatch] = useReducer(DataGridReducers, initalState)
     return (
         <DataGridContext.Provider value={[state, dispatch]}>
             {children}
         </DataGridContext.Provider>
     )
 }
-export default SampleProvider;
+export default DataGridProvider;

@@ -10,6 +10,8 @@ export default (state, action) => {
         return { ...state, selectedRows: action.selectedRows };
       case "SET_PAGE_SIZE":
         return { ...state, pageSize: action.pageSize };
+      case "SET_TOTAL":
+        return { ...state, total: action.total };
       default:
         return state;
     }

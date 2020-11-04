@@ -27,6 +27,11 @@ export const setPageNumber = (currentPage) => ({
     currentPage,
 });
 
+export const setTotal = (total) => ({
+    type: "SET_TOTAL",
+    total,
+});
+
 export const sortColumn = (sortColumnName, sortType) => ({
     type: "SORT_COLUMN",
     sortColumnName,
