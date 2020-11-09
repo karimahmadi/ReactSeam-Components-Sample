@@ -1,4 +1,8 @@
 # Don't check auto-generated stuff into git
+
+#IDE
+.idea
+
 coverage
 build
 node_modules
