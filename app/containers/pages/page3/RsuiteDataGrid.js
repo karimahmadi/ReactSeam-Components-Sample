@@ -16,7 +16,6 @@ import {
 } from '../../actions/DataGridActions';
 
 const RsuiteDataGrid = () => {
-  console.log(DataGridContext);
   const [state, dispatch] = useContext(DataGridContext);
   useEffect(() => {
     setTimeout(() => dispatch(fetchData()), 1000);
@@ -64,7 +63,6 @@ const RsuiteDataGrid = () => {
         selectionMode="multiple"
         data={state.data}
         pageRangeDisplayed={3}
-        total={5}
         total={state.total}
         onChangePage={handlePageChange}
         onChangePageSize={handleChangePageSize}

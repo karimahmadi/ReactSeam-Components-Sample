@@ -43,22 +43,19 @@ function DataGridData(sortColumnName, sortType, limit = 0, offset = 10) {
       return y - x;
     });
   }
-  console.log('offset', offset);
-  console.log('limit', limit);
   // pagination//
   if (offset !== undefined && limit !== 0) {
     resultList = [];
     for (
       let i = limit * offset;
       i < (offset + 1) * limit && i < result.length;
-      i++
+      i += 1
     ) {
       resultList.push(result[i]);
     }
   } else {
     resultList = result;
   }
-  console.log('resultList', resultList);
   return { resultList, total };
 }
 export { DataGridData };

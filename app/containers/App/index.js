@@ -18,6 +18,7 @@ import Page2 from '../pages/page2';
 import TabControl from '../pages/TabControl';
 import SearchContract from '../pages/searchContract';
 import Page3 from '../pages/page3';
+import TreeView from '../pages/TreeView';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
                   { title: 'page3', url: '/page3' },
                   { title: 'TabControl', url: '/TabControl' },
                   { title: 'searchContract', url: '/searchContract' },
+                  { title: 'treeView', url: '/treeView' },
                 ]}
               />
             </Grid>
@@ -50,6 +52,7 @@ function App() {
                 <Route path="/page3" component={Page3} />
                 <Route path="/TabControl" component={TabControl} />
                 <Route path="/searchContract" component={SearchContract} />
+                <Route path="/treeView" component={TreeView} />
               </Switch>
             </Grid>
           </Grid>
