@@ -19,6 +19,7 @@ import TabControl from '../pages/TabControl';
 import SearchContract from '../pages/searchContract';
 import Page3 from '../pages/page3';
 import TreeView from '../pages/TreeView';
+import Modal from '../pages/Modal';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
                   { title: 'TabControl', url: '/TabControl' },
                   { title: 'searchContract', url: '/searchContract' },
                   { title: 'treeView', url: '/treeView' },
+                  { title: 'test modal', url: '/modal' },
                 ]}
               />
             </Grid>
@@ -53,6 +55,7 @@ function App() {
                 <Route path="/TabControl" component={TabControl} />
                 <Route path="/searchContract" component={SearchContract} />
                 <Route path="/treeView" component={TreeView} />
+                <Route path="/modal" component={Modal} />
               </Switch>
             </Grid>
           </Grid>

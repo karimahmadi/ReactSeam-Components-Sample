@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import ButtonGroup from '@material-ui/core/ButtonGroup/ButtonGroup';
 import 'rc-easyui/dist/themes/default/easyui.css';
 import 'rc-easyui/dist/themes/react.css';
@@ -11,7 +12,7 @@ import { CodeTextLookup } from '@tatareact/core/CodeTextLookup';
 import { CodeCombo } from '@tatareact/core/CodeCombo';
 import { Grid } from '@tatareact/core/Grid';
 
-const Page2 = () => {
+const Page2 = ({ cancel, confirm }) => {
   const useData = () => [
     {
       date: '1398/10/18',
@@ -119,8 +120,20 @@ const Page2 = () => {
           </Grid>
         </Grid>
       </Section>
+      <Section>
+        <Grid item lg={12} md={12} sm={12} xs={12} left>
+          <ButtonGroup variant="text">
+            <Button onClick={confirm}>تایید</Button>
+            <Button onClick={cancel}>انصراف</Button>
+          </ButtonGroup>
+        </Grid>
+      </Section>
     </Fragment>
   );
 };
 
+Page2.propTypes = {
+  confirm: PropTypes.func,
+  cancel: PropTypes.func,
+};
 export default Page2;
