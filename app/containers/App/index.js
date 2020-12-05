@@ -21,6 +21,7 @@ import Page3 from '../pages/page3';
 import TreeView from '../pages/TreeView';
 import Modal from '../pages/Modal';
 import SubGrid from '../pages/SubGrid';
+import DownloadFilePage from '../pages/DownloadFilePage';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
                   { title: 'treeView', url: '/treeView' },
                   { title: 'test modal', url: '/modal' },
                   { title: 'sub grid', url: '/subgrid' },
+                  { title: 'download file', url: '/downloadfile' },
                 ]}
               />
             </Grid>
@@ -59,6 +61,7 @@ function App() {
                 <Route path="/treeView" component={TreeView} />
                 <Route path="/modal" component={Modal} />
                 <Route path="/subgrid" component={SubGrid} />
+                <Route path="/downloadfile" component={DownloadFilePage} />
               </Switch>
             </Grid>
           </Grid>

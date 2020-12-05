@@ -13,7 +13,7 @@ export default function getRestConfig() {
   };
 
   if (process.env.NODE_ENV === 'development') {
-    config.baseURL = 'http://localhost';
+    config.baseURL = 'http://192.168.101.171';
   }
   return config;
 }

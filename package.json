@@ -69,7 +69,7 @@
     "@material-ui/core": "^4.9.13",
     "@material-ui/lab": "^4.0.0-alpha.56",
     "@material-ui/pickers": "^3.2.10",
-    "@tatareact/core": "^0.2.3",
+    "@tatareact/core": "^0.2.7",
     "axios": "^0.19.2",
     "chalk": "2.4.2",
     "compression": "1.7.4",
